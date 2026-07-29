@@ -5,7 +5,7 @@ project:
   discord:      ""
   description:  "INT8 signed 1x4 dot-product MAC with INT32 accumulator and streaming byte interface - a scaled-down demonstrator of a transformer QK^T attention kernel."
   language:     "Verilog"
-  clock_hz:     50000000
+  clock_hz:     100000000
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
