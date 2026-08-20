@@ -4,7 +4,7 @@ Datasheet for tt_um_pratibha_munnangi_qkt_mac.
 
 ## How it works
 
-This chip is a **1×4 INT4 signed dot-product MAC** with an INT32 accumulator — a scaled-down demonstrator of the QKᵀ multiply used in transformer self-attention.
+This chip is a **1×4 INT4 signed dot-product MAC** with an INT32 accumulator — the compute kernel at the heart of transformer self-attention (QKᵀ).
 
 The datapath runs a 3-stage pipeline: four parallel INT4×INT4 signed multiplies, a 4-input adder tree, and an INT32 accumulate. A Q register holds the query nibble-vector and is reused across many streaming K vectors — the same Q-row reuse pattern used in real attention accelerators, just in miniature.
 
